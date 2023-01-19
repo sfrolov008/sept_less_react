@@ -115,3 +115,36 @@ body {
     color: #443c3c;
     text-align: center;
 }
+
+
+.launches {
+    width: 90%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.launch {
+    width: 360px;
+    height: 360px;
+
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.launch>img{
+    max-width: 200px;
+}
+.launch>div{
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(69, 69, 69, 0.75);
+}
+

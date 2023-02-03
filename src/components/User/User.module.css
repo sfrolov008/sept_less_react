@@ -1,0 +1,16 @@
+.User{
+    width: 360px;
+    padding: 20px 30px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px #6d6d6d;
+    background-color: #ffffff;
+    color: #686868;
+    border: 1px solid rgb(243, 243, 243);
+}
+.User:hover{
+    border: 1px solid rgb(170, 170, 170);
+}
+.User li{
+    list-style-type: none;
+}

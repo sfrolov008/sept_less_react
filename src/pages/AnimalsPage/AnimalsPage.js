@@ -2,8 +2,6 @@ import {CatForm, Cats, DogForm, Dogs,} from "../../components";
 
 import style from './AnimalsPage.module.css'
 
-
-
 const AnimalsPage = () => {
     return (
         <div className={style.Animals_Page}>

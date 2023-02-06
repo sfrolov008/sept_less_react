@@ -9,11 +9,13 @@ import {StateProvider} from "./hoc/StateProvider";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <StateProvider>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-    </StateProvider>
+    <React.StrictMode>
+        <StateProvider>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </StateProvider>
+    </React.StrictMode>
 );
 
 

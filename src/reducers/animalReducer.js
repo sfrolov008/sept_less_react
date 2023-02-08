@@ -13,14 +13,14 @@ const animalActions = {
     DELETE_BY_ID_DOG: (dogId) => ({type: animalActionTypes.deleteByIdDog, payload: dogId})
 }
 
-const initAnimalState = () => ([]);
+const initAnimalState = () => ([{cats:[], dogs:[]}]);
 
 const reducerAnimal = (state, action) => {
 
     switch (action.type) {
         case animalActionTypes.addCat:
             const lastCat = state.slice(-1);
-            const catId = lastCat.length ? lastCat[0].id + 1 : 0;
+            const catId = lastCat.length ? lastCat[0].id + 1 : 1;
             return [...state, {id:catId, ...action.payload}]
 
         case animalActionTypes.deleteByIdCat:
@@ -30,7 +30,7 @@ const reducerAnimal = (state, action) => {
 
         case animalActionTypes.addDog:
             const lastDog = state.slice(-1);
-            const dogId = lastDog.length ? lastDog[0].id + 1 : 0;
+            const dogId = lastDog.length ? lastDog[0].id + 1 : 1;
             return [...state, {id:dogId, ...action.payload}]
 
         case animalActionTypes.deleteByIdDog:

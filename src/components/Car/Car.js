@@ -13,11 +13,9 @@ const Car = ({car}) => {
                 <div>price: {price}</div>
                 <div>year: {year}</div>
                 <button onClick={()=>dispatch(carActions.deleteById({id}))}>Delete</button>
-                <button onClick={()=>dispatch(carActions.setUpdateCar({car}))}>Update</button>
-
+                <button onClick={()=>dispatch(carActions.setUpdateCar(car))}>Update</button>
             </div>
         );
     };
-
 
 export {Car};

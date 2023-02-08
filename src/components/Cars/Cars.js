@@ -1,7 +1,8 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {Car} from "../Car/Car";
 import {carActions} from "../../redux";
+
+import {Car} from "../Car/Car";
 
 const Cars = () => {
 
@@ -14,7 +15,7 @@ const Cars = () => {
 
     return (
         <div>
-            {loading && <h2>Loading.......................</h2>}
+            {loading && <h2>Loading</h2>}
             {cars.map(car => <Car key={car.id} car={car}/>)}
         </div>
     );

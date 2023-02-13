@@ -2,7 +2,8 @@ import {createContext, useReducer} from "react";
 
 import {initUserState, reducerUser} from "../reducers/userReducer";
 import {initCarState, reducerCar} from "../reducers/carReducer";
-import {initAnimalState, reducerAnimal} from "../reducers/animalReducer";
+import {initCatState, reducerCat} from "../reducers/catReducer";
+import {initDogState, reducerDog} from "../reducers/dogReducer";
 
 const StateContext = createContext(null);
 
@@ -11,7 +12,8 @@ const StateProvider = ({children}) => {
     const reducers = {
         userReducer: useReducer(reducerUser, null, initUserState),
         carReducer: useReducer( reducerCar,null, initCarState),
-        animalReducer: useReducer(reducerAnimal, null,initAnimalState)
+        catReducer: useReducer(reducerCat, null, initCatState),
+        dogReducer: useReducer(reducerDog, null, initDogState)
     }
 
     return (

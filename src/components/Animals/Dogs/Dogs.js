@@ -3,7 +3,7 @@ import {Dog} from "../Dog/Dog";
 
 const Dogs = () => {
 
-       const [dogs]= useAppReducer(reducers=>reducers.animalReducer)
+       const [dogs]= useAppReducer(reducers=>reducers.dogReducer)
 
     return (
         <div>

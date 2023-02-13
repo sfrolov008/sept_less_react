@@ -1,17 +1,17 @@
 import {useForm} from "react-hook-form";
 
 import {useAppReducer} from "../../../hooks/useAppReducer";
-import {animalActions} from "../../../reducers/animalReducer";
+import {dogActions} from "../../../reducers/dogReducer";
 
 const DogForm = () => {
 
     const {register, reset, handleSubmit} = useForm();
 
-    const [,dispatch] = useAppReducer(reducers=> reducers.animalReducer);
+    const [,dispatch] = useAppReducer(reducers=> reducers.dogReducer);
 
 
     const createDog = (dog) => {
-        dispatch(animalActions.ADD_DOG(dog))
+        dispatch(dogActions.ADD_DOG(dog))
         reset()
     };
 

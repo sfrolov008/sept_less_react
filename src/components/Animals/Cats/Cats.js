@@ -3,7 +3,7 @@ import {Cat} from "../Cat/Cat";
 
 const Cats = () => {
 
-    const [cats] = useAppReducer(reducers => reducers.animalReducer);
+    const [cats] = useAppReducer(reducers => reducers.catReducer);
 
     return (
         <div>

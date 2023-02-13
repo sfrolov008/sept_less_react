@@ -1,17 +1,18 @@
 import {useForm} from "react-hook-form";
 
 import {useAppReducer} from "../../../hooks/useAppReducer";
-import {animalActions} from "../../../reducers/animalReducer";
+
+import {catActions} from "../../../reducers/catReducer";
 
 const CatForm = () => {
 
     const {register, reset, handleSubmit} = useForm();
 
-    const [,dispatch] = useAppReducer(reducers=>reducers.animalReducer);
+    const [,dispatch] = useAppReducer(reducers=>reducers.catReducer);
 
 
     const createCat = (cat) => {
-        dispatch(animalActions.ADD_CAT(cat))
+        dispatch(catActions.ADD_CAT(cat))
         reset()
     };
 
